@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'StRydeRegular';
+    src: url('../fonts/StRydeRegular/stryde-regular-webfont.eot');
+    src: url('../fonts/StRydeRegular/stryde-regular-webfont.eot') format('embedded-opentype'),
+    url('../fonts/StRydeRegular/stryde-regular-webfont.woff') format('woff'),
+    url('../fonts/StRydeRegular/stryde-regular-webfont.ttf') format('truetype'),
+    url('../fonts/StRydeRegular/stryde-regular-webfont.svg#stryde-regular-webfont') format('svg');
+}
+
+@font-face {
+    font-family: 'SitkaSmallRegular';
+    src: url('../fonts/SitkaSmallRegular/SitkaSmallRegular.otf');
+    url('../fonts/SitkaSmallRegular/SitkaSmallRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SitkaSmallBold';
+    src: url('../fonts/SitkaSmallBold/SitkaSmallBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BariolRegular';
+    src: url('../fonts/BariolRegular/BariolRegular.eot');
+    src: url('../fonts/BariolRegular/BariolRegular.eot') format('embedded-opentype'),
+    url('../fonts/BariolRegular/BariolRegular.woff') format('woff'),
+    url('../fonts/BariolRegular/BariolRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ExistenceLight';
+    src: url('../fonts/ExistenceLight/Existence-Light-webfont.eot');
+    src: url('../fonts/ExistenceLight/Existence-Light-webfont.eot') format('embedded-opentype'),
+    url('../fonts/ExistenceLight/Existence-Light-webfont.woff') format('woff'),
+    url('../fonts/ExistenceLight/Existence-Light-webfont.ttf') format('truetype'),
+    url('../fonts/ExistenceLight/Existence-Light-webfont.svg#Existence-Light-webfont') format('svg');
+}

@@ -1,0 +1,237 @@
+@import "scss_lib/lib";
+@import "fonts.css";
+@import "footer.css";
+
+.header {
+  position: relative;
+
+  @include max-screen(991px) {
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 999;
+  }
+
+  .header-body {
+    background-color: #fff;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .header-logo {
+    padding-top: 45px;
+
+    @include max-screen(991px) {
+      display: none;
+    }
+  }
+
+  .header-menu {
+    padding-top: 55px;
+    position: relative;
+
+    @include max-screen(991px) {
+      padding-top: 20px;
+    }
+
+    a {
+      color: #999;
+      font-family: 'SitkaSmallBold', sans-serif;
+      font-size: 19px;
+      letter-spacing: -3px;
+      margin: 0 10px;
+      padding: 15px 0 5px;
+      text-transform: uppercase;
+      word-spacing: -8px;
+
+      @include max-screen(1199px) {
+        font-size: 15px;
+      }
+    }
+
+    li.active a {
+      border-bottom: 4px solid #cc0000;
+      color: #cc0000;
+    }
+
+    @include max-screen(991px) {
+
+      .navbar-collapse {
+        margin-top: 80px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      button.navbar-toggle {
+        width: 60px;
+      }
+
+      .icon-bar {
+        background-color: #cc0000;
+        height: 3px;
+        width: 100%;
+      }
+
+      .navbar-toggle .icon-bar+.icon-bar {
+        margin-top: 8px;
+      }
+
+    }
+
+    .navbar-brand {
+      display: inline-block;
+      height: 60px;
+      max-width: 300px;
+      text-align: left;
+      width: 100%;
+
+      @include min-screen(992px) {
+        display: none;
+      }
+
+      @include max-screen(767px) {
+        max-width: 200px;
+      }
+
+      @include max-screen(400px) {
+        max-width: 150px;
+      }
+
+      @include max-screen(350px) {
+        max-width: 100px;
+      }
+
+      img {
+        height: 100%;
+        object-fit: contain;
+        object-position: left;
+        width: 100%;
+      }
+    }
+  }
+
+  .header-follow {
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+
+    @include max-screen(991px) {
+      display: none;
+    }
+
+    img {
+      height: 37px;
+    }
+
+    i, img {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    a {
+      color: #cc0000;
+      font-size: 30px;
+      padding: 0;
+    }
+  }
+
+  .nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
+    color: #cc0000;
+  }
+
+}
+
+nav.navbar {
+  border: none;
+  margin-bottom: 0;
+}
+
+//  --- mobile navbar for sm ---
+@media (max-width: 992px) {
+  .navbar-header {
+    float: none;
+  }
+  .navbar-left,.navbar-right {
+    float: none !important;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+  }
+  .navbar-collapse.collapse {
+    display: none!important;
+  }
+  .navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+  }
+  .navbar-nav>li {
+    float: none;
+  }
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .collapse.in{
+    display:block !important;
+  }
+}
+
+//  ---- INDEX PAGE HEADER ----
+.header.header-index {
+
+  .header-body {
+    background-color: #c31915;
+    height: 100%;
+  }
+
+  .header-border {
+    border: 25px solid transparent;
+    bottom: 0;
+    $header_border: url('../images/header-border.png') 0 0 25 round;
+    -moz-border-image: $header_border;
+    -webkit-border-image: $header_border;
+    -o-border-image: $header_border;
+    border-image: $header_border;
+    border-image-outset: 0 0 5px 0;
+    margin-left: -25px;
+    position: absolute;
+    width: calc(100vw + 50px);
+  }
+
+  .header-menu {
+    a {
+      color: #f8b7b6;
+    }
+
+    li.active a {
+      border-bottom: 4px solid #fff;
+      color: #fff;
+    }
+  }
+
+  .nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .header-follow {
+    a {
+      color: #fff;
+    }
+  }
+
+  @include max-screen(991px) {
+
+    .icon-bar {
+      background-color: #fff;
+    }
+  }
+}
